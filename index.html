@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarker</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <script src="https://kit.fontawesome.com/462ed72a0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+
+    <h1 id="show-modal">Add Bookmark</h1>
+
+    <div class="container" id="bookmarks-container"></div>
+    
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-times close-icon" id="close-modal"></i>
+
+
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>    
+            </div>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" class="form-input" id="website-name" autocorrect = "off" autocapitalize="off" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">Website URL</label>
+                        <input type="text" class="form-input" id="website-url" autocorrect = "off" autocapitalize="off" autocomplete="off">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+
+           
+        </div>
+
+    
+    </div>
+
+
+    </div>
+    
+    
+    <button class="removeAll hideBtn" id="removeAll">Remove All Bookmarks</button>
+
+
+    <!-- 2nd modal
+     -->
+
+     <div class="modal-bg" id="modal-bg">
+
+        <div class="modal2">
+    
+          <div class="fa">
+    
+            <i class="fa-solid fa-x"></i>
+    
+          </div>
+          
+          <h1>Are you sure?</h1>
+          <h4>Deleting will remove all bookmarks!</h4>
+          <div class="buttons">
+            <button class="btn1" id="btn1">Yes</button>
+            <button class="btn2" id="btn2">No</button>
+          </div>
+          
+        </div>
+    
+        
+      </div>
+
+     
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
